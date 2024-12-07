@@ -65,14 +65,14 @@ void loop()
       motor1.run(RELEASE);
       motor1.setSpeed(0);
       motor2.run(FORWARD);
-      motor2.setSpeed(15);
+      motor2.setSpeed(150);
     }
 
     // Turn Right: When Right Sensor is on Black Line
     if((digitalRead(RS)== 1) && (digitalRead(MS)== 0) && (digitalRead(LS)== 0))
     {
       motor1.run(FORWARD);
-      motor1.setSpeed(15);
+      motor1.setSpeed(150);
       motor2.run(RELEASE);
       motor2.setSpeed(0); 
     }
